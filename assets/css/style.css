@@ -78,6 +78,7 @@ main {
     align-items: center;
     gap: 1rem;
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
 .barra__logo {
@@ -88,7 +89,7 @@ main {
 }
 
 .barra__logo > img {
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0 1px 4px rgba(255, 255, 255, 0.7));
 }
 
 .barra__navbar {
@@ -153,7 +154,7 @@ main {
 /* Nosotros */
 
 .nosotros {
-    height: 100vh;
+    height: auto;
     background-color: var(--blanco);
     max-width: 900px;
     margin: 0 auto;
@@ -241,3 +242,83 @@ main {
         font-size: 3rem;
     }
 }
+
+/* Productos */
+
+.contenedor-productos {
+    background-color: var(--primario);
+}
+
+.productos {
+    height: 120vh;
+    margin: 0 1rem;
+}
+
+.item {
+    background-color: var(--blanco);
+    position: relative;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.item > a {
+    font-size: 5rem;
+}
+
+.item > a:first-of-type {
+    position: absolute;
+    color: var(--primario);
+    top: 50%;
+    left: 0;
+}
+
+.item > a:last-of-type {
+    position: absolute;
+    color: var(--primario);
+    top: 50%;
+    right: 0;
+}
+
+.item > i {
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.item > p {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--primario);
+}
+
+.item__body {
+    text-align: center;
+}
+
+.item__body > button {
+    border: none;
+    background-color: var(--primario);
+    color: var(--blanco);
+    border-radius: 4px;
+}
+
+.item__imagen {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.item__botones {
+    padding: 1rem 0;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
