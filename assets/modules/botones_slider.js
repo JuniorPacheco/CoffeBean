@@ -1,6 +1,5 @@
 const siguiente = document.querySelector(".bx-chevron-right");
 const anterior = document.querySelector(".bx-chevron-left");
-const items = document.querySelectorAll(".item");
 
 let contenedorItems = document.querySelector(".productos__items-contenedor");
 let botonSiguiente = siguiente.addEventListener('click', siguienteProducto);
@@ -13,14 +12,16 @@ function siguienteProducto(e) {
 }
 
 function anteriorProducto(e) {
+    const items = document.querySelectorAll(".item");
     let ultimo = document.querySelectorAll(".item")[items.length - 1];
     contenedorItems.insertAdjacentElement('afterbegin', ultimo);
     e.preventDefault();
 }
 
 function cambioPrimeraVez() {
+    const items = document.querySelectorAll(".item");
     let ultimoPrimeraVez = document.querySelectorAll(".item")[items.length - 1];
-    contenedorItems.insertAdjacentElement('afterbegin', ultimoPrimeraVez)
+    contenedorItems.insertAdjacentElement('afterbegin', ultimoPrimeraVez);
 }
 
 const funciones = {

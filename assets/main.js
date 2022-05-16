@@ -8,7 +8,7 @@ import desplegarDescripcion from '/assets/modules/despliege_descripcionItems.js'
 pintarPrimeraVez;
 desplegarNavBar;
 desplegarCarrito;
-botonesSlider.cambioPrimeraVez;
+botonesSlider.cambioPrimeraVez();
 botonesSlider.botonAnterior;
 botonesSlider.botonSiguiente;
 desplegarDescripcion;
