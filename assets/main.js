@@ -1,20 +1,10 @@
-const siguiente = document.querySelector(".bx-chevron-right");
-const anterior = document.querySelector(".bx-chevron-left");
+import botonesSlider from '/assets/modules/botones_slider.js'
+import dataBase from '/assets/dataBase/dataBase.js'
+import desplegarCarrito from '/assets/modules/despliegue_carrito.js';
+import desplegarNavBar from '/assets/modules/despliege_navbar.js';
 
-let contenedorItems = document.querySelector(".productos__items-contenedor");
-const items = document.querySelectorAll(".item");
-
-siguiente.addEventListener('click', siguienteProducto);
-anterior.addEventListener('click', anteriorProducto);
-
-function siguienteProducto(e) {
-    let primero = document.querySelectorAll(".item")[0];
-    contenedorItems.insertAdjacentElement('beforeend', primero);
-    e.preventDefault();
-}
-
-function anteriorProducto(e) {
-    let ultimo = document.querySelectorAll(".item")[items.length - 1];
-    contenedorItems.insertAdjacentElement('afterbegin', ultimo);
-    e.preventDefault();
-}
+desplegarNavBar;
+desplegarCarrito;
+botonesSlider.cambioPrimeraVez;
+botonesSlider.botonAnterior;
+botonesSlider.botonSiguiente;

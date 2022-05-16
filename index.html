@@ -88,16 +88,16 @@
                             <div class="item__imagen">
                                 <img src="assets/img/helado.png" alt="Helado de chocolate">
                             </div>
-                            <p>Helado 1</p>
-                            <div class="item__botones">
-                                <i class='bx bxs-minus-circle'></i>
-                                <p>0</p>
-                                <i class='bx bxs-plus-circle'></i>
-                            </div>
+                            <p class="item__nombre">Helado 1</p>
                             <button>Agregar al carrito</button>
                         </div>
                         <i class='bx bx-menu-alt-left'></i>
                         <p>$<span>0</span></p>
+                        <div class="item__descripcion">
+                            <div class="item__description-texto">
+                                <p>Descipción del producto</p>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="item">
@@ -105,12 +105,7 @@
                             <div class="item__imagen">
                                 <img src="assets/img/helado2.png" alt="Helado de chocolate">
                             </div>
-                            <p>Helado 2</p>
-                            <div class="item__botones">
-                                <i class='bx bxs-minus-circle'></i>
-                                <p>0</p>
-                                <i class='bx bxs-plus-circle'></i>
-                            </div>
+                            <p class="item__nombre">Helado 2</p>
                             <button>Agregar al carrito</button>
                         </div>
                         <i class='bx bx-menu-alt-left'></i>
@@ -122,12 +117,7 @@
                             <div class="item__imagen">
                                 <img src="assets/img/helado3.png" alt="Helado de chocolate">
                             </div>
-                            <p>Helado 3</p>
-                            <div class="item__botones">
-                                <i class='bx bxs-minus-circle'></i>
-                                <p>0</p>
-                                <i class='bx bxs-plus-circle'></i>
-                            </div>
+                            <p class="item__nombre">Helado 3</p>
                             <button>Agregar al carrito</button>
                         </div>
                         <i class='bx bx-menu-alt-left'></i>
@@ -140,6 +130,21 @@
                 <a href=""><i class='bx bx-chevron-right'></i></a>
 
             </section>
+
+            <section class="car">
+                <h2>Mi Carrito</h2>
+       
+                <!-- Aqui van los items del carrito -->
+                <section class="car__items"></section>
+       
+                <button class="car__buttonDeleteAll"><i class='bx bxs-message-square-x'></i> Vaciar Carrito</button>
+       
+                <div class="car__total">
+                   <p>Total: $<span>0</span></p>
+                </div>
+       
+             </section>
+             
         </div>
 
     </main>
