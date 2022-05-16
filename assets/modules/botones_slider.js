@@ -6,8 +6,6 @@ let contenedorItems = document.querySelector(".productos__items-contenedor");
 let botonSiguiente = siguiente.addEventListener('click', siguienteProducto);
 let botonAnterior = anterior.addEventListener('click', anteriorProducto);
 
-cambioPrimeraVez();
-
 function siguienteProducto(e) {
     let primero = document.querySelectorAll(".item")[0];
     contenedorItems.insertAdjacentElement('beforeend', primero);

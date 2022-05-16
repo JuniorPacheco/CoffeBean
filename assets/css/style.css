@@ -363,6 +363,7 @@ main {
     color: var(--blanco);
     border-radius: 4px;
     padding: 1rem;
+    font-style: italic;
 }
 
 .item__imagen {
@@ -377,7 +378,8 @@ main {
 }
 
 .item__nombre {
-    margin: 2rem 0;
+    margin: 2.5rem 0;
+    font-size: 1.8rem;
 }
 
 .item__descripcion {
@@ -428,7 +430,7 @@ main {
         background-color: var(--blanco);
         padding: 2rem;
         border-radius: 10px;
-        width: auto;
+        width: calc(100% / 3 - 2rem);
     }
 
     .item__imagen {
@@ -442,6 +444,14 @@ main {
 
     .item__nombre {
         margin-top: 0;
+    }
+
+    .item__body > button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        border-top-left-radius: 20px;
     }
 
     .productos > a:first-of-type {
