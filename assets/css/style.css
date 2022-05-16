@@ -174,16 +174,16 @@ main {
 /* Nosotros */
 
 .nosotros {
-    height: auto;
+    min-height: 100vh;
     background-color: var(--blanco);
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 60px 1rem;
 }
 
 .nosotros > h2 {
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 .nosotros > p {
@@ -273,6 +273,8 @@ main {
     background-color: var(--primario);
     display: flex;
     justify-content: center;
+    min-height: 100vh;
+    padding: 60px 0;
 }
 
 .productos {
@@ -287,6 +289,7 @@ main {
 .productos > h2 {
     color: var(--blanco);
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .productos__categorias {
