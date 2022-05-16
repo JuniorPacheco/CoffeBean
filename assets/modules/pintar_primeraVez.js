@@ -1,7 +1,11 @@
 import baseDeDatos from "../database/database.js"
 
 const contenedorProductos = document.querySelector(".productos__items-contenedor");
+const catergorias = document.querySelector(".productos__categorias");
 
+Array.from(catergorias.children).forEach((element, index)=>{
+    element.setAttribute("data-categoria", `${index}`);
+})
 
 let productsTemplateHTML = '';
 baseDeDatos[0].forEach((elemento) => {
@@ -14,7 +18,7 @@ baseDeDatos[0].forEach((elemento) => {
                 <img src="${elemento.imagen}" alt="${elemento.descripcion}">
             </div>
             <p class="item__nombre">${elemento.nombre}</p>
-            <button data-id="${elemento.id}">Agregar al carrito</button>
+            <button class="boton__agregarProducto" data-id="${elemento.id}">Agregar al carrito</button>
         </div>
         <p>$<span>${elemento.precio}</span></p>
         <div class="item__descripcion">

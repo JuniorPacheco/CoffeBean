@@ -1,6 +1,7 @@
-const descripcionDesplegable = document.querySelectorAll('.item__descripcion');
 import baseDeDatos from "../database/database.js"
+import {getDescripcionDesplegable, getContador} from '/assets/modules/pintar_categorias.js'
 
+let descripcionDesplegable = document.querySelectorAll('.item__descripcion');
 export default document.addEventListener('click', atraparBotones);
 
 function atraparBotones(e) {
@@ -11,9 +12,17 @@ function atraparBotones(e) {
 
 function desplegarDescripcion(data_id) {
     let resultado = encontrarIndex(parseInt(data_id));
-    descripcionDesplegable[resultado].classList.contains("active") ?
-    descripcionDesplegable[resultado].classList.remove("active") :
-    descripcionDesplegable[resultado].classList.add("active");
+    console.log(getContador())
+    if(getContador()){
+        console.log(getDescripcionDesplegable()[resultado])
+        getDescripcionDesplegable()[resultado].classList.contains("active") ?
+        getDescripcionDesplegable()[resultado].classList.remove("active") :
+        getDescripcionDesplegable()[resultado].classList.add("active");
+    }else {
+        descripcionDesplegable[resultado].classList.contains("active") ?
+        descripcionDesplegable[resultado].classList.remove("active") :
+        descripcionDesplegable[resultado].classList.add("active");
+    }
 }
 
 function encontrarIndex(id){
