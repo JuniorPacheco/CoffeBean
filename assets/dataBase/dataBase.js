@@ -50,6 +50,32 @@ const productos = [
             imagen: "assets/img/bebida3.png",
             categoria: "bebidas"
         }
+    ],
+    [
+        {
+            id: 7,
+            nombre: "Empanada rellena",
+            precio: 2200,
+            descripcion: "Empanada rellena con arroz, pollo, verduras y salsa de la casa",
+            imagen: "assets/img/empanada.png",
+            categoria: "desayuno"
+        },
+        {
+            id: 8,
+            nombre: "Sandwich de jamón",
+            precio: 3000,
+            descripcion: "Sandwich de jamón con aguacate y verduras",
+            imagen: "assets/img/sandwich.png",
+            categoria: "desayuno"
+        },
+        {
+            id: 9,
+            nombre: "Desayuno completo",
+            precio: 8000,
+            descripcion: "Huevos, salchichas a la parrilla, verduras, tocineta de cerdo, pan tostado y dos huevos",
+            imagen: "assets/img/huevos.png",
+            categoria: "desayuno"
+        }
     ]
 
 ]

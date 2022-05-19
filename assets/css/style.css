@@ -279,9 +279,8 @@ main {
 
 .productos {
     position: relative;
-    height: 110vh;
     margin: 0 2rem;
-    padding: 2rem 0;
+    padding-top: 2rem;
     overflow: hidden;
     max-width: 35rem;
 }
@@ -325,14 +324,14 @@ main {
 .productos > a:first-of-type {
     position: absolute;
     color: var(--primario);
-    top: 40%;
+    top: 47%;
     left: 0;
 }
 
 .productos > a:last-of-type {
     position: absolute;
     color: var(--primario);
-    top: 40%;
+    top: 47%;
     right: 0;
 }
 
@@ -368,14 +367,14 @@ main {
 }
 
 .item__imagen {
-    margin: 0 auto;
+    margin: auto;
     width: 50%;
-    height: 307.42px;
+    height: 250px;
     margin-bottom: 1rem;
 }
 
 .item__imagen img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .item__nombre {
@@ -568,6 +567,18 @@ main {
     cursor: pointer;
 }
 
+.car > button {
+    border: none;
+    background-color: var(--primario);
+    border-radius: 4px;
+    padding: 1rem;
+    color: var(--blanco);
+}
+
+.car__pagar {
+    margin-top: 1rem;
+}
+
 .car__buttonDeleteAll {
     margin-top: 1rem;
 }
@@ -580,4 +591,27 @@ main {
     .car {
         width: auto;
     }
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    padding: 3rem;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+.footer__socialmedia a {
+    padding: 0.5rem;
+}
+
+.footer__socialmedia a i {
+    color: var(--primario);
+    font-size: 4rem;
 }

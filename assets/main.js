@@ -6,7 +6,9 @@ import desplegarDescripcion from '/assets/modules/despliege_descripcionItems.js'
 import pintarCategorias from '/assets/modules/pintar_categorias.js'
 import agregarAlCarrito from '/assets/modules/agregar_carrito.js'
 import accionBotonesCarrito from '/assets/modules/accionBotonesCarrito.js'
+import pagar from '/assets/modules/pagar.js'
 
+console.log("Hecho por el poderoso Junior 🐧");
 
 pintarPrimeraVez;
 desplegarNavBar;
@@ -18,4 +20,4 @@ desplegarDescripcion;
 pintarCategorias;
 agregarAlCarrito;
 accionBotonesCarrito;
-
+pagar;
