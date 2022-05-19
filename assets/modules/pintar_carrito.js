@@ -44,4 +44,5 @@ export default function pintarCarrito() {
         </div>
         `); 
     }
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }
