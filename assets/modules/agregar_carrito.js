@@ -8,7 +8,6 @@ export let carrito = {};
 
 function atraparBotones(e) {
    if (e.target.classList.contains("boton__agregarProducto")) {
-      console.log(typeof e.target.getAttribute("data-id"))
       agregarAlCarrito(e.target.getAttribute("data-id"));
    }
 }

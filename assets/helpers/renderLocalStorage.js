@@ -4,16 +4,17 @@ import { carrito } from '/assets/modules/agregar_carrito.js';
 export default document.addEventListener('DOMContentLoaded', function(){
     if (localStorage.getItem('carrito')) {
         let carritoLocalStorage = JSON.parse(localStorage.getItem('carrito'));
-        Object.values(carritoLocalStorage).forEach((producto, i)=>{
-            carrito[Object.values(carritoLocalStorage)[i]["id"]] = {
-                categoria: Object.values(carritoLocalStorage)[i]["categoria"],
-                nombre: Object.values(carritoLocalStorage)[i]["nombre"],
-                precio: Object.values(carritoLocalStorage)[i]["precio"],
-                imagen: Object.values(carritoLocalStorage)[i]["imagen"],
-                cantidad: Object.values(carritoLocalStorage)[i]["cantidad"],
-                id: Object.values(carritoLocalStorage)[i]["id"]
+        for(let codigoId in carritoLocalStorage){
+            carrito[codigoId] = {
+                categoria: carritoLocalStorage[codigoId]["categoria"],
+                nombre: carritoLocalStorage[codigoId]["nombre"],
+                precio: carritoLocalStorage[codigoId]["precio"],
+                imagen: carritoLocalStorage[codigoId]["imagen"],
+                cantidad: carritoLocalStorage[codigoId]["cantidad"],
+                id: carritoLocalStorage[codigoId]["id"]
              }
-        })
+
+        }
         pintarCarrito();
     }
 })
