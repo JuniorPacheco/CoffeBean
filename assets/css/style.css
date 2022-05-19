@@ -291,6 +291,12 @@ main {
     text-align: center;
 }
 
+.productos > h3 {
+    color: var(--blanco);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
 .productos__categorias {
     color: var(--blanco);
     font-size: 3rem;
